@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Reels</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.video-container {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+button, select, input {
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 10 Videos -->
+<div class="video-container"><video src="video1.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video2.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video3.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video4.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video5.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video6.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video7.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video8.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video9.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<div class="video-container"><video src="video10.mp4" muted playsinline></video><div class="controls"><button onclick="togglePlay(this)">⏯</button><button onclick="toggleMute(this)">🔇</button><button onclick="forward(this)">⏩</button><button onclick="backward(this)">⏪</button><select onchange="changeSpeed(this)"><option value="0.5">0.5x</option><option value="1" selected>1x</option><option value="2">2x</option><option value="3">3x</option><option value="4">4x</option></select><input type="range" min="0" max="1" step="0.1" onchange="changeVolume(this)"></div></div>
+
+<script>
+const videos = document.querySelectorAll("video");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    let video = entry.target;
+    if (entry.isIntersecting) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+}, { threshold: 0.7 });
+
+videos.forEach(video => observer.observe(video));
+
+function getVideo(el){
+  return el.closest(".video-container").querySelector("video");
+}
+
+function togglePlay(btn){
+  let v = getVideo(btn);
+  v.paused ? v.play() : v.pause();
+}
+
+function toggleMute(btn){
+  let v = getVideo(btn);
+  v.muted = !v.muted;
+}
+
+function forward(btn){
+  let v = getVideo(btn);
+  v.currentTime += 5;
+}
+
+function backward(btn){
+  let v = getVideo(btn);
+  v.currentTime -= 5;
+}
+
+function changeSpeed(sel){
+  let v = getVideo(sel);
+  v.playbackRate = sel.value;
+}
+
+function changeVolume(slider){
+  let v = getVideo(slider);
+  v.volume = slider.value;
+}
+</script>
+
+</body>
+</html>
